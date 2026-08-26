@@ -1,0 +1,52 @@
+body {
+  background-color: rgba(0, 255, 255, 0.066);
+}
+
+/* ===================================================
+   FLEXBOX - GUIA RÁPIDO DE PROPRIEDADES
+   =================================================== */
+
+/* 
+1. justify-content (Alinhamento no Eixo Principal)
+   - flex-start: Alinha os itens ao início (esquerda por padrão)
+   - center: Centraliza os itens horizontalmente
+   - flex-end: Alinha os itens ao final (direita por padrão)
+   - space-between: Espaço igual entre os itens (primeiro no início, último no fim)
+   - space-around: Espaço igual ao redor de cada item (espaço nas pontas é metade do meio)
+   - space-evenly: Espaço exatamente igual entre todos os itens e as bordas
+*/
+
+/* 
+2. align-items (Alinhamento no Eixo Transversal)
+   - flex-start: Alinha os itens no topo (início)
+   - center: Centraliza os itens verticalmente
+   - flex-end: Alinha os itens na parte inferior (fim)
+   - stretch: Estica os itens para ocupar toda a altura do container (padrão)
+   - baseline: Alinha os itens com base na linha base do texto interno
+*/
+
+/* 
+3. flex-direction (Direção do Eixo Principal)
+   - row: Itens em linha, da esquerda para a direita (padrão)
+   - row-reverse: Itens em linha, da direita para a esquerda
+   - column: Itens em coluna, de cima para baixo
+   - column-reverse: Itens em coluna, de baixo para cima
+*/
+
+.container {
+  display: flex;
+  flex-direction: column; /* teste com: row, row-reverse, column, column-reverse */
+  justify-content: center; /* teste com: flex-start, flex-end, space-between, space-around, space-evenly */
+  align-items: center;     /* teste com: flex-start, flex-end, center, stretch */
+  background-color: gray;
+  width: 500px;
+  height: 500px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border: 1px solid red;
+
+}
